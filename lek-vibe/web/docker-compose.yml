@@ -9,7 +9,7 @@ services:
     container_name: mongkol-web
     restart: unless-stopped
     ports:
-      - "3000:3000"
+      - "3089:3000"
     environment:
       DATABASE_URL: postgres://mongkol:${POSTGRES_PASSWORD:-mongkol_dev_pw}@mongkol-db:5432/mongkol
       HOSTNAME: 0.0.0.0
